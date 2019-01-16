@@ -1,4 +1,4 @@
 # SpecTruMetRx Documentation
 
 ## Data Model
-* [SpectrumDataModeling]()
+* [SpectrumDataModeling](https://github.com/SpecTruMetRx/Documentation/blob/master/DataModel.pdf)
