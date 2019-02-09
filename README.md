@@ -8,4 +8,9 @@ All project issues will be logged in this repository. Please refer to the issues
 * [SpectrumDataModeling](https://github.com/SpecTruMetRx/Documentation/blob/master/DataModel.pdf)
 
 ## UML Sequence Diagram
-* [Sequence Diagram](https://github.com/SpecTruMetRx/Documentation/blob/master/DataModel.pdf)
+* [Sequence Diagram](https://github.com/SpecTruMetRx/Documentation/blob/master/SpectrumUML.Sequence.Master.pdf)
+
+**Figure 1**
+![alt text](https://github.com/SpecTruMetRx/Documentation/blob/master/img/SpecSequenceUML.png "UML Sequence Diagram: Phase 1 +")
+
+
