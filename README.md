@@ -6,3 +6,6 @@ All project issues will be logged in this repository. Please refer to the issues
 
 ## Data Model
 * [SpectrumDataModeling](https://github.com/SpecTruMetRx/Documentation/blob/master/DataModel.pdf)
+
+## UML Sequence Diagram
+* [Sequence Diagram](https://github.com/SpecTruMetRx/Documentation/blob/master/DataModel.pdf)
