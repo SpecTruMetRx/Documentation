@@ -14,13 +14,13 @@ Lenders and financial institutions can issue debt through the SpecTruMetRx API t
 
 ## API Strategy & Future Integration Use Cases
 - [ ] Medical Factoring Marketplace
-- [] Third-Party Medical Administrators
-- [] CPA Firms (Financial Export)
-- [] Attorneys
-- [] Healthcare and/or IT Consultants
-- [] Healthcare Clearinghouses
-- [] Independent Medical Transcriptionists
-[] Pharmacy Benefits Managers
+- [ ] Third-Party Medical Administrators
+- [ ] CPA Firms (Financial Export)
+- [ ] Attorneys
+- [ ] Healthcare and/or IT Consultants
+- [ ] Healthcare Clearinghouses
+- [ ] Independent Medical Transcriptionists
+- [ ] Pharmacy Benefits Managers
 
 ## Data Model
 * [SpectrumDataModeling](https://github.com/SpecTruMetRx/Documentation/blob/master/DataModel.pdf)
