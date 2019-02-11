@@ -13,4 +13,9 @@ All project issues will be logged in this repository. Please refer to the issues
 **Figure 1**
 ![alt text](https://github.com/SpecTruMetRx/Documentation/blob/master/img/SpecSequenceUML.png "UML Sequence Diagram: Phase 1 +")
 
+## Context: Data Flow Diagram
+* [DFD: Context Diagram](https://github.com/SpecTruMetRx/Documentation/blob/master/SpectrumDataFlowDiagram.pdf)
+
+**Figure 2**
+![alt text](https://github.com/SpecTruMetRx/Documentation/blob/master/img/SpecContextDFD.Phase1.png "Context DFD: Phase 1")
 
