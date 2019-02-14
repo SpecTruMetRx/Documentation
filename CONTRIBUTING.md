@@ -193,7 +193,7 @@ During automated testing, code coverage metrics will be reported. Line coverage 
 
 ## SpecTruMetRx Git Commit Message Style Guide
 
-#### Introduction
+### Introduction
 
 This style guide acts as the official guide to follow in your projects and commits. SpecTruMetRx evaluators will use this guide to complete *code reviews* of any work pushed to our repositories. There are many opinions on the "ideal" style in the world of development. Therefore, in order to reduce the confusion on what style engineers should follow during the course of their work, we urge all contibutors to refer to this style guide before committing their code.
 
@@ -214,7 +214,7 @@ Commit messages should not:
 * Exceed 72 characters in length in the body of the commit,
   * Except where necessary to maintain the structure of machine-readable or machine-generated text (e.g. error messages).
 
-#### Commit Messages
+### Commit Messages
 
 **Message Structure**
 
@@ -309,3 +309,20 @@ Issue severity is categorized as follows (in ascending order):
 * _Critical_: Large-scale loss of functionality or impairment of use, such that remaining utility becomes marginal.
 * _Blocker_: Harmful or otherwise unacceptable behavior. Must fix.
 
+## Check Lists
+
+The following check lists should be completed and attached to pull requests when they are filed (author checklist) and when they are merged (reviewer checklist).
+
+### Author Checklist
+
+- [ ] Changes address original issue?
+- [ ] Unit tests included and/or updated with changes?
+- [ ] Command line build passes?
+- [ ] Changes have been smoke-tested?
+
+### Reviewer Checklist
+
+- [ ] Changes appear to address issue?
+- [ ] Appropriate unit tests included?
+- [ ] Code style and in-line documentation are appropriate?
+- [ ] Commit messages meet standards?
