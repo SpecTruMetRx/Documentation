@@ -8,7 +8,7 @@ The short version:
 
 1. Write your Contribution
 2. Make sure your contributin meets code, test, and commit message standards as described below.
-3. Submit a Pull Request from a topic branch back to `master`. Include a checklist, as described below. (Optionally, assign this to a specific member for review.)
+3. Submit a Pull Request from a topic branch back to `master`. Include a checklist, as described below. (Optionally, assign this to a specific member for review).
 4. Respond to any discussion. When the reviewer decides it's ready, they will merge back `master` and fill out their own checklist.
 
 ## Project Goals
@@ -54,6 +54,55 @@ References to roles are made throughout this document. These are not intended to
 * *Author*: The individual who has made changes to files in the software repository, and wishes to check these in.
 * *Reviewer*: The individual who reviews changes to files before they are checked in.
 * *Integrator*: The individual who performs the task of merging these files. Usually the reviewer.
+
+### Branching
+
+Four basic types of branches may be included in the repositories above:
+
+1. Master branch
+2. Dev branch
+2. Topic branches
+3. Developer branches
+
+Branches which do not fit into the above categories may be created and used during the course of development for various reasons, such as large-scale refactoring of code or implementation of complex features which may cause instability. In these exceptional cases it is the responsibility of the developer who initiates the task which motivated this branching to communicate to the team the role of these branches and any associated procedures for the duration of their use.
+
+**Master Branch**
+
+The `master` branch is the `PROD` ready version of the application which should be a **stable** version of our software. Development branches will be merged into the `master` branch only by the **Product Owner** after having reviewed all Source Code, Code Reviews, and Pull Requests.
+
+**Dev Branch**
+
+The role of the `dev` branch is to represent the latest "ready for unit testing" version of the software. Source code on the `dev` branch has undergone peer review, and will undergo regular automated testing with notification on failure. Development branches may be unstable (particularly for recent features), but the intent is for the stability of any features on `dev` branches to be non-decreasing. It is the shared responsibilityt of authors, reviewers, and integrators to ensure this. Create all Pull Requests to merge *Topic* branches into the *Dev* branch of the application.
+
+**Topic Branches**
+
+Topic branches are used by developers to perform and record work on issues.
+
+Topic branches do not need to be stable, even when pushed to the central repository; in fact, the practice of making incremental commits while working on an issue and pushing these to the central repository is encouraged, to avoid lost work and to share work-in-progress. (Small commits also help isolate changes, which can help in identifying which change introduced a defect, particularly when that defect went unnoticed for some time, ed using `git bisect`).
+
+Topic branches should be named according to their corresponding issue identifiers, all lower case, with hyphens. (e.g. branch spectrum-9 would refer to issue #9). Currently topic branches have been named according to the issue subject line e.g. clinic-registration. Please adjust as needed.
+
+**Developer Branches**
+
+Developer branches are any branches used for purposes outside of the scope stated above; e.g. to "try things out", or to maintain a "my latest stuff" branch that is not delayed by the review and integration process. These may be pushed to the central repository, and may follow any naming convention desired so long as the owner of the branch is identifiable, and so long as the name chosen could not be mistaken for a `topic` or `master` branch. e.g.:
+
+`$ git checkout -b lopez-my-stuff-branch`
+
+### Merging
+
+When development is complete on an issue the first step toward merging it back into the `master` branch is to file a **Pull Request** to first merge the work to review into the `dev` branch. The contributions should meet code, test, and commit message standards as described below, and the pull request should include a complete author checklist, also as described below. Pull Requests may be assigned to specific team members when appropriate and should **ONLY be requested for merging into** the `dev` branch (e.g. to draw the person's attention).
+
+Code review should take place using discussion features within the Pull Request. When the reviewer is satisfied, they should add a comment to the pull request containing the reviewer checklist (from below) and complete the merge back into the `dev` branch.
+
+#### Merge into PROD (`master` branch) by Product Owner ONLY!!!
+
+Upon the successful completion of the merge into `dev` the reviewer/integrator **SHALL** create a second Pull Request to merge the `dev` branch into the `master` branch.
+
+The **SpecTruMetRx** Product Owner is the only person authorized to merge the `dev` branch into `master` for automated deployment into `Production`.
+
+## Standards
+
+Contributing to **SpecTruMetRx** must satisfy **ESLint** under the default settings for `create-react-app` on the frontend or the settings documented in the SpectrumStack repository for the backend.
 
 ## SpecTruMetRx Git Commit Message Style Guide
 
