@@ -129,11 +129,90 @@ JavaScript sources in **SpecTruMetRx** should:
 
 Deviations from **SpecTruMetRx** code style guidelines require two-party agreement, typically from the author of the change and its reviewer.
 
+#### Code Example
+
+```js
+/*global define*/
+
+/**
+ * Title: someClass.js WebService API
+ * SpecTruMetRx - MediPayCore
+ * Author: Engineer's Name
+ * [Month] [Day], [Year]
+ *
+ * Bundles should declare themselves as namespaces in whichever source
+ * file is most like the "main point of entry" to the bundle.
+ * @namespace some/bundle
+ */
+define(
+    ['./OtherClass'],
+    function (OtherClass) {
+        "use strict";
+
+        /**
+         * A summary of how to use this class goes here.
+         *
+         * @constructor
+         * @memberof some/bundle
+         */
+        function ExampleClass() {
+        }
+
+        // Methods which are not intended for external use should
+        // not have JSDoc (or should be marked @private)
+        ExampleClass.prototype.privateMethod = function () {
+        };
+
+        /**
+         * A summary of this method goes here.
+         * @param {number} n a parameter
+         * @returns {number} a return value
+         */
+        ExampleClass.prototype.publicMethod = function (n) {
+            return n * 2;
+        }
+
+        return ExampleClass;
+    }
+);
+```
+
+### Test Standards
+
+Automated testing shall occur whenever changes are merged into the main development branch and must be confirmed alongside any pull request.
+
+Automated tests are typically unit tests which exercise individual software components. Tests are subject to code review along with the actual implementation, to ensure that tests are applicable and useful.
+
+Examples of useful tests:
+* Tests which replicate bugs (or their root causes) to verify their resolution.
+* Tests which reflect details from software specifications.
+* Tests which exercise edge or corner cases among inputs.
+* Tests which verify expected interactions with other components in the system.
+
+During automated testing, code coverage metrics will be reported. Line coverage must remain at or above 80%.
+
 ## SpecTruMetRx Git Commit Message Style Guide
 
 #### Introduction
 
 This style guide acts as the official guide to follow in your projects and commits. SpecTruMetRx evaluators will use this guide to complete *code reviews* of any work pushed to our repositories. There are many opinions on the "ideal" style in the world of development. Therefore, in order to reduce the confusion on what style engineers should follow during the course of their work, we urge all contibutors to refer to this style guide before committing their code.
+
+Commit messages should:
+
+* Contain a one-line subject, followed by one line of white space, followed by one or more descriptive paragraphs, each separated by one line of white space.
+* Contain a short (usually one word) reference to the feature or subsystem the commit effects, followed by a colon, at the start of the subject line (e.g. `feat: Draft of check-in process`).
+* Contain a reference to a relevant issue number in the body of the commit.
+  * This is important for traceability; while branch names also provide this, you cannot tell from looking at a commit what branch it was authored on.
+  * This may be omitted if the relevant issue is otherwise obvious from the commit history (that is, if using `git log` from the relevant commit directly leads to a similar issue reference) to minimize clutter.
+* Describe the change that was made, and any useful rationale therefore.
+  * Comments in code should explain what things do, commit messages describe how they came to be done that way.
+* Provide sufficient information for a reviewer to understand the changes made and their relationship to previous code.
+
+Commit messages should not:
+
+* Exceed 54 characters in length on the subject line.
+* Exceed 72 characters in length in the body of the commit,
+  * Except where necessary to maintain the structure of machine-readable or machine-generated text (e.g. error messages).
 
 #### Commit Messages
 
@@ -163,7 +242,7 @@ The type is contained within the title and can be one of these types:
 
 **The Subject**
 
-Subjects should be no greater than 50 characters, should begin with a capital letter and do not end with a period.
+Subjects should be no greater than 54 characters, should begin with a capital letter and do not end with a period.
 
 Use an imperative tone to describe what a commit does, rather than what it did. For example, use change; not changed or changes.
 
@@ -179,7 +258,7 @@ The footer is optional and is used to reference issue tracker IDs.
 
 **Example Commit Message**
 ```
-feat: Summarize changes in around 50 characters or less
+feat: Summarize changes in around 54 characters or less
 
 More detailed explanatory text, if necessary. Wrap it to about 72
 characters or so. In some contexts, the first line is treated as the
@@ -211,4 +290,22 @@ See also: #456, #789
 **You can also just keep it simple and just use one-line commit messages as so:**
 
 `$ git commit -m "feat: Adding new feature."`
+
+## Issue Reporting
+
+Issues are tracked at https://github.com/SpecTruMetRx/Documentation/issues.
+
+Issues should include:
+
+* A short description of the issue encountered.
+* A longer-form description of the issue encountered. When possible, steps to reproduce the issue.
+* When possible, a description of the impact of the issue. What use case does it impede?
+* An assessment of the severity of the issue.
+
+Issue severity is categorized as follows (in ascending order):
+
+* _Trivial_: Minimal impact on the usefulness and functionality of the software; a "nice-to-have."
+* _(Unspecified)_: Major loss of functionality or impairment of use.
+* _Critical_: Large-scale loss of functionality or impairment of use, such that remaining utility becomes marginal.
+* _Blocker_: Harmful or otherwise unacceptable behavior. Must fix.
 
