@@ -1,4 +1,4 @@
-# Contribution Guidelines
+# SpecTruMetRx Contribution Guidelines
 
 Thank you for committing to working on the development of the **SpecTruMetRx Payments & Healthcare Analytics** solution with [us](https://www.DavidPLopez.com). We use our [Discord Chat Room](https://discord.gg/yw3BnBk) for our team and its contributors, please join us and use the `#engineering` channel in our [Discord Chat Room](https://discord.gg/yw3BnBk) to discuss any development related topics.
 
@@ -18,14 +18,21 @@ Our goal is to make **SpecTruMetRx** a trusted healthcare software service partn
 * Physical & Occupational Therapy Clinics
 * Urgent Care Centers & Hospitals
 
-## Project Structure
+## SpecTruMetRx Project Structure
 
 There are a few repositories to be aware of to be able to successfully contribute to the development of this application. Below are the list of repositories in question:
 
 1. [BusinessAdmin](https://github.com/SpecTruMetRx/BusinessAdmin)
+  * This repository contains all of the Business/Marketing Plans & Financial Models that identify the mission we are trying to achieve. **Please make sure you read these documents to understand our business before writing any code**.
+
 2. [Documentation](https://github.com/SpecTruMetRx/Documentation)
+  * This is the project documentation repository, where we will document every feature that we implement.
+
 3. [SpectrumStack](https://github.com/SpecTruMetRx/SpectrumStack)
+  * This is our serverless + microservice backend repository. Navigate to the `/services` sub-directory within the record to create new services for each feature that we need to implement. Each individual serverless + microservice will have its own `serverless.yml` file which will serve as the AWS CloudFormation template used to deploy AWS resources with an *Infrastructure As Code* paradigm.
+
 4. [SpectrumClient](https://github.com/SpecTruMetRx/SpectrumClient)
+  * This is our React.js frontend repository.
 
 ## SpecTruMetRx Git Commit Message Style Guide
 
