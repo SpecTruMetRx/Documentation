@@ -32,16 +32,16 @@ Our goal is to make **SpecTruMetRx** a trusted healthcare software service partn
 There are a few repositories to be aware of to be able to successfully contribute to the development of this application. Below are the list of repositories in question:
 
 1. [BusinessAdmin](https://github.com/SpecTruMetRx/BusinessAdmin)
-  * This repository contains all of the Business/Marketing Plans & Financial Models that identify the mission we are trying to achieve. **Please make sure you read these documents to understand our business before writing any code**.
+    * This repository contains all of the Business/Marketing Plans & Financial Models that identify the mission we are trying to achieve. **Please make sure you read these documents to understand our business before writing any code**.
 
 2. [Documentation](https://github.com/SpecTruMetRx/Documentation)
-  * This is the project documentation repository, where we will document every feature that we implement.
+    * This is the project documentation repository, where we will document every feature that we implement.
 
 3. [SpectrumStack](https://github.com/SpecTruMetRx/SpectrumStack)
-  * This is our serverless + microservice backend repository. Navigate to the `/services` sub-directory within the record to create new services for each feature that we need to implement. Each individual serverless + microservice will have its own `serverless.yml` file which will serve as the AWS CloudFormation template used to deploy AWS resources with an *Infrastructure As Code* paradigm.
+    * This is our serverless + microservice backend repository. Navigate to the `/services` sub-directory within the record to create new services for each feature that we need to implement. Each individual serverless + microservice will have its own `serverless.yml` file which will serve as the AWS CloudFormation template used to deploy AWS resources with an *Infrastructure As Code* paradigm.
 
 4. [SpectrumClient](https://github.com/SpecTruMetRx/SpectrumClient)
-  * This is our React.js frontend repository.
+    * This is our React.js frontend repository.
 
 ## Contribution Process
 
@@ -103,6 +103,31 @@ The **SpecTruMetRx** Product Owner is the only person authorized to merge the `d
 ## Standards
 
 Contributing to **SpecTruMetRx** must satisfy **ESLint** under the default settings for `create-react-app` on the frontend or the settings documented in the SpectrumStack repository for the backend.
+
+### Code Standards
+
+JavaScript sources in **SpecTruMetRx** should:
+
+* Use Tabs. Spaces should not be used (ESLint & JSFormatter will resolve automatically).
+* Include JSDoc for any exposed API (e.g. public methods, constructors).
+* Include non-JSDoc comments as-needed for explaining private variables, methods, or algorithms when they are non-obvious.
+* Define one public class per script, expressed as a constructor function returned from an AMD-style module.
+* Follow “Java-like” naming conventions. These includes:
+  * Classes should use camel case, first letter capitalized (e.g. SomeClassName).
+  * Methods, variables, fields, and function names should use camel case, first letter lower-case (e.g. someVariableName).
+  * Constants (variables or fields which are meant to be declared and initialized statically, and never changed) should use only capital letters, with underscores between words (e.g. SOME_CONSTANT).
+  * File names should be the name of the exported class, plus a .js extension (e.g. SomeClassName.js).
+* Avoid anonymous functions, except when functions are short (a few lines) and/or their inclusion makes sense within the flow of the code (e.g. as arguments to a forEach call).
+* Avoid deep nesting (especially of functions), except where necessary (e.g. due to closure scope).
+* End with a single new-line character.
+* Expose public methods by declaring them on the class's prototype.
+* Within a given function's scope, do not mix declarations and imperative code, and  present these in the following order:
+  * First, variable declarations and initialization.
+  * Second, function declarations.
+  * Third, imperative statements.
+  * Finally, the returned value.
+
+Deviations from **SpecTruMetRx** code style guidelines require two-party agreement, typically from the author of the change and its reviewer.
 
 ## SpecTruMetRx Git Commit Message Style Guide
 
