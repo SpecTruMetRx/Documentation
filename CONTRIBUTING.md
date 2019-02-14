@@ -2,6 +2,15 @@
 
 Thank you for committing to working on the development of the **SpecTruMetRx Payments & Healthcare Analytics** solution with [us](https://www.DavidPLopez.com). We use our [Discord Chat Room](https://discord.gg/yw3BnBk) for our team and its contributors, please join us and use the `#engineering` channel in our [Discord Chat Room](https://discord.gg/yw3BnBk) to discuss any development related topics.
 
+## Summary
+
+The short version:
+
+1. Write your Contribution
+2. Make sure your contributin meets code, test, and commit message standards as described below.
+3. Submit a Pull Request from a topic branch back to `master`. Include a checklist, as described below. (Optionally, assign this to a specific member for review.)
+4. Respond to any discussion. When the reviewer decides it's ready, they will merge back `master` and fill out their own checklist.
+
 ## Project Goals
 
 We are building a *Healthcare Payments & Analytics* software suite on the blockchain to **help hospitals improve patient outcomes, and to help insurers eliminate fraud with our Ai Workbench, while helping banks to quickly and easily search for a healthcare practice that they will want to loan money to by accessing our underwriting data**. Our application includes a backend API service to handle basic CRUD operations and is built on a **DARN** technology stack that includes the following tools:
@@ -33,6 +42,18 @@ There are a few repositories to be aware of to be able to successfully contribut
 
 4. [SpectrumClient](https://github.com/SpecTruMetRx/SpectrumClient)
   * This is our React.js frontend repository.
+
+## Contribution Process
+
+**SpecTruMetRx** uses Git for Software Version Control, and for branching and merging. Please review the repositories above to understand which repository you will need to working within.
+
+### Roles
+
+References to roles are made throughout this document. These are not intended to reflect titles or long-term job assignments; rather, these are used as descriptors to refer to members of the development team performing tasks in the check-in process. These roles are:
+
+* *Author*: The individual who has made changes to files in the software repository, and wishes to check these in.
+* *Reviewer*: The individual who reviews changes to files before they are checked in.
+* *Integrator*: The individual who performs the task of merging these files. Usually the reviewer.
 
 ## SpecTruMetRx Git Commit Message Style Guide
 
@@ -112,3 +133,8 @@ like this:
 Resolves: #123
 See also: #456, #789
 ```
+
+**You can also just keep it simple and just use one-line commit messages as so:**
+
+`$ git commit -m "feat: Adding new feature."`
+
