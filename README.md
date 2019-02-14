@@ -1,5 +1,7 @@
 # SpecTruMetRx Documentation
 
+[PLEASE READ OUR CONTRIBUTION GUIDELINES BEFORE PUSHING ANY COMMITS!!!](https://github.com/SpecTruMetRx/Documentation/blob/master/CONTRIBUTING.md)
+
 This is the documentation repository for our application source code. Please document all features that are implemented inside of this archive.
 
 All project issues will be logged in this repository. Please refer to the issues here to address all features and functionality to be developed and implemented.
