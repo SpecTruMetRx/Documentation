@@ -291,6 +291,37 @@ See also: #456, #789
 
 `$ git commit -m "feat: Adding new feature."`
 
+### Pushing To Remote Repositories
+
+Make sure to push your work to the correct topic branch that you are working on after committing all changes as mentioned above. The goal is to push detailed work separately, to the repo as indicated in the short and precise commit message. If you complete a specific task involving a bug, ensure you commit and push the changes made to the source code for that bug only. We would like to make it simpler to search the `$ git log` messages based on precise work committed.
+
+When working on a specific topic branch push all commits to the remote repository on *GitHub* using the following `cmd` on the terminal:
+
+* `$ git push origin <topic-branch>`
+
+**Please make sure to update Semantic Versioning after pushing all toping branches to the remote repository as shown in the next section.**
+
+## Semantic Versioning
+Whenever you push a release for work completed on a topic branch you *SHALL* **version** it. This helps the **SpecTruMetRx** engineering team in the future to understand what stage the application is at, and will also help when integrating the application into package managers in the future. **SpecTruMetRx** follows software engineering *Best Practices* and uses **Semantic Versioning**, which is a general template for developers within the industry to use and understand. Ultimately, versioning our application helps us keep track of what's been added or removed at any given point in time. Versioning will help our teams reference source code that has been added or fixed.
+
+### Rules for Major, Minor, or Patch Release
+
+* **Major Release:** Increment the first digit by **1** if the new features break backwards compatibility/current features.
+
+* **Minor Release:** Increment the middle digit by **1** if the new features do not break any existing features and are compatible with the application in it's current state.
+
+* **Patch Release:** Increment the last digit by **1** if you're publishing bug/patch fixes your application.
+
+Please review the [Semantic Versioning Specifications here](https://semver.org).
+
+### Tagging a Release
+
+You should also **tag** releases on **GitHub** using [git tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging) which supports *annotated* tags for our uses. Creating an *annotated* tag in **Git** can be specified `-a` when running the `tag` command as follows:
+
+* `$ git tag -a v1.4.3 -m "release-feat: My version 1.4"`
+
+The `-m ` specifies a tagging message, which is stored with the tag. If you don't specify a message for an annotated tag, Git launches your editor so you can type it in. You can view the tag data along with the commit that was tagged by using the `$ git show` command.
+
 ## Issue Reporting
 
 Issues are tracked at https://github.com/SpecTruMetRx/Documentation/issues.
