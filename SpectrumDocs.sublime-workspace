@@ -1,0 +1,675 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padding",
+				"padding-top\tproperty"
+			],
+			[
+				"lat",
+				"latitude"
+			],
+			[
+				"sho",
+				"showRestaurants"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"facebook",
+				"facebook_id"
+			],
+			[
+				"fac",
+				"facebook"
+			],
+			[
+				"face",
+				"facebook_id"
+			],
+			[
+				"us",
+				"user_id"
+			],
+			[
+				"getUse",
+				"getUserId"
+			],
+			[
+				"use",
+				"username"
+			],
+			[
+				"fb",
+				"fb_client_secrets"
+			],
+			[
+				"login",
+				"login_session"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"acc",
+				"access_token"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"ali",
+				"align-content"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-stretch"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"backg",
+				"background-size"
+			],
+			[
+				"backgr",
+				"background-image"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"border-s",
+				"border-spacing"
+			],
+			[
+				"inl",
+				"inline-table"
+			],
+			[
+				"fle",
+				"flex-direction"
+			],
+			[
+				"background",
+				"background-position"
+			],
+			[
+				"flex",
+				"flex-flow"
+			],
+			[
+				"fig",
+				"figcaption\tTag"
+			],
+			[
+				"fi",
+				"figure\tTag"
+			],
+			[
+				"square",
+				"squareOfInt"
+			],
+			[
+				"squa",
+				"squareOfInt"
+			],
+			[
+				"curre",
+				"currentSequence"
+			],
+			[
+				"curr",
+				"currentSequence"
+			],
+			[
+				"current",
+				"currentInt"
+			],
+			[
+				"sum",
+				"sumOfSquaresOfDigits"
+			],
+			[
+				"happy",
+				"happyNumBool"
+			],
+			[
+				"num",
+				"numLst"
+			],
+			[
+				"tota",
+				"totalWeightKg"
+			],
+			[
+				"TOTA",
+				"totalWeightKg"
+			],
+			[
+				"quote",
+				"quoteType"
+			],
+			[
+				"has",
+				"hasCorrectPostalCodeFormat"
+			],
+			[
+				"post",
+				"postalCode"
+			],
+			[
+				"con",
+				"convertWeight"
+			],
+			[
+				"response",
+				"responseHeader"
+			],
+			[
+				"respo",
+				"responseHeader"
+			],
+			[
+				"sales",
+				"salesOrder"
+			],
+			[
+				"sal",
+				"Sales"
+			],
+			[
+				"shi",
+				"shipToCountry"
+			],
+			[
+				"zip",
+				"zipCode"
+			],
+			[
+				"pos",
+				"postalCode"
+			],
+			[
+				"origi",
+				"originPostalCode"
+			],
+			[
+				"item",
+				"itemWeight"
+			],
+			[
+				"get",
+				"getRates"
+			],
+			[
+				"selected",
+				"selectedShippingMethod"
+			],
+			[
+				"Sales",
+				"salesOrder"
+			],
+			[
+				"js",
+				"jsonData"
+			],
+			[
+				"genre",
+				"genre_id"
+			],
+			[
+				"repla",
+				"replaceOrder"
+			],
+			[
+				"dep",
+				"department"
+			],
+			[
+				"ite",
+				"itemLineNum"
+			],
+			[
+				"line",
+				"lineCount"
+			],
+			[
+				"sa",
+				"salesOrder"
+			],
+			[
+				"gs",
+				"GS_GPRO_SDB"
+			],
+			[
+				"set",
+				"setClosingPrice"
+			],
+			[
+				"create",
+				"createTrade"
+			],
+			[
+				"new",
+				"newClosingPrice"
+			],
+			[
+				"clo",
+				"closingPrice"
+			],
+			[
+				"nested",
+				"nestedFoo"
+			],
+			[
+				"lo",
+				"localFoo"
+			],
+			[
+				"empl",
+				"employee"
+			],
+			[
+				"employee",
+				"employeestatus"
+			],
+			[
+				"pre",
+				"prevStatus"
+			],
+			[
+				"prev",
+				"prevEmployee"
+			],
+			[
+				"pr",
+				"prevEmployee"
+			],
+			[
+				"cust",
+				"custNotify"
+			],
+			[
+				"ter",
+				"term15"
+			],
+			[
+				"t",
+				"term15"
+			],
+			[
+				"ta",
+				"taxPercent"
+			],
+			[
+				"url",
+				"urllib"
+			],
+			[
+				"span",
+				"spanTags"
+			],
+			[
+				"border",
+				"borders"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/David/OneDrive/Documents/DevOps/TechnicalArticles/DataModel.UserDetail.md",
+			"settings":
+			{
+				"buffer_size": 142,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 604.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/David/OneDrive/Documents/DevOps/Spectrum.Documentation"
+	],
+	"file_history":
+	[
+		"/C/Users/David/OneDrive/Documents/DevOps/Spectrum.Documentation/CONTRIBUTING.md",
+		"/C/Users/David/OneDrive/Documents/DevOps/Spectrum.Documentation/README.md",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/PortfolioFiles/index.html",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/PortfolioFiles/css/portfolio.css",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/PortfolioFiles/css/under667.css",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/PortfolioFiles/css/under770.css",
+		"/C/Users/David/Downloads/sample/sample.py",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/PortfolioFiles/ReadMe.md",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/PortfolioFiles/resume.html",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/MenuProject/menuProject.py",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/MenuProject/restaurantMenuSchema.py",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/4square/findRestaurant.py",
+		"/D/NASA/NASA/CCDD Web App - Last Copy/ccdd.js",
+		"/D/NASA/NASA/CCDD Web App - Last Copy/public/ccdd_viewer_controller.js",
+		"/D/NASA/NASA/CCDD Web App - Last Copy/public/report_bug.html",
+		"/C/Users/David/OneDrive/Documents/DevOps/ML/MachineLearningResearch/CryptoCurrencyResearch/PricingResearch.slides.html",
+		"/C/Users/David/AppData/Local/Temp/Temp1_Introduction.html.zip/Module 1/Introduction.html",
+		"/C/Users/David/OneDrive/Documents/DevOps/ML/MachineLearningResearch/QuantFinance/modelingResearch/NormlTrnd.py",
+		"/C/Users/David/OneDrive/Documents/DevOps/SkilledLaborFM/SkilledLaborGUI/README.md",
+		"/C/Users/David/OneDrive/Documents/DevOps/SkilledLaborFM/SkilledLaborGUI/index.html",
+		"/C/Users/David/.bash_profile",
+		"/C/Users/David/.bashrc",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/4square/rest.py",
+		"/C/Users/David/OneDrive/Documents/DevOps/Revature/MontioringSystem/src/monitoring/Animal.java",
+		"/C/Users/David/OneDrive/Documents/DevOps/Revature/MonitoringSystem/src/monitoring/Animal.java",
+		"/C/Users/David/OneDrive/Documents/DevOps/IoT/README.md",
+		"/C/Users/David/OneDrive/Documents/DevOps/ML/MachineLearningResearch/QuantFinance/PricingResearch.slides.html",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/PortfolioFiles/assets/ChallengerORingData.html",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/lopezdp.github.io/assets/resume.md",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/PortfolioFiles/assets/resume.md",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/PortfolioFiles/ai.html",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/PortfolioFiles/SpaceShuttle.html",
+		"/C/Users/David/Desktop/ChallengerORingData.md",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/PortfolioFiles/js/portfolio.js",
+		"/C/Users/David/Downloads/ReadMe (1).md",
+		"/C/Users/David/Downloads/README.md",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/PortfolioFiles/css/under557.css",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/PortfolioFiles/css/770toUnder555.css",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/PortfolioFiles/css/555to770.css",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/PortfolioFiles/assets/css/shuttle.css",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/PortfolioFiles/assets/css/reveal.css",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/PortfolioFiles/assets/css/simple.css",
+		"/C/Users/David/OneDrive/Documents/DevOps/SkilledLaborFM/SkilledLaborGUI/IoTassets/smartHat.cpp",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/lopezdp.github.io/ReadMe.md",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/SoftwareEngineer.sublime-project",
+		"/C/Users/David/Desktop/NASA/ccdd.js",
+		"/C/Users/David/Desktop/NASA/ccdd_viewer.html",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/PortfolioFiles/assets/resume.html",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/PortfolioFiles/portfolio.css",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/PortfolioFiles/under770.css",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/PortfolioFiles/portfolio.js",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/portfolio.js",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/portfolio.css",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Portfolio/index.html",
+		"/C/Users/David/OneDrive/Documents/2. DPL.com/Portfolio/node_modules/express/lib/response.js",
+		"/C/Users/David/OneDrive/Documents/Python/VicCooley/Project/benzene.txt",
+		"/C/Users/David/OneDrive/Documents/DavidSeijo.iOSApp/iOSELD/ATHOS/src/dataAccess/MyConfig.java",
+		"/C/Users/David/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Classwork/HTML/Lists/index.html",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Classwork/HTML/Figure/index.html",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Classwork/HTML/WebDevBlog/index.html",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Classwork/HTML/WritingSelectors/index.html",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Classwork/HTML/Link2Stylesheet/index.html",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Classwork/HTML/index.html",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/Classwork/HTML/Trees/index.html",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/MovieTrailers/fresh_tomatoes.html",
+		"/C/Users/David/OneDrive/Documents/Python/Udacity/Projects/ProfanityChecker/Movie_Quotes.txt",
+		"/C/Users/David/OneDrive/Documents/2. DPL.com/Portfolio/report.html",
+		"/C/Users/David/OneDrive/Documents/2. DPL.com/Portfolio/index.html",
+		"/C/Users/David/OneDrive/Documents/2. DPL.com/SubcontractorReporting/index.html",
+		"/C/Users/David/OneDrive/Documents/2. DPL.com/SubcontractorReporting/tracking.html",
+		"/C/Users/David/OneDrive/Documents/2. DPL.com/SubcontractorReporting/report.html",
+		"/C/Users/David/OneDrive/Documents/2. DPL.com/Portfolio/tracking.html",
+		"/C/Users/David/OneDrive/Documents/DavidSeijo.iOSApp/iOSELD/ATHOS/src/dataAccess/WebServiceControl.java",
+		"/C/Users/David/Desktop/Vineet/PrincipalActivity.java",
+		"/C/Users/David/Desktop/Vineet/Utils.java",
+		"/C/Users/David/OneDrive/Documents/DavidSeijo.iOSApp/iOSELD/ATHOS/src/bussinessLogic/ViolationBL.java",
+		"/C/Users/David/OneDrive/Documents/DavidSeijo.iOSApp/iOSELD/ATHOS/src/bussinessLogic/EventBL.java",
+		"/C/Users/David/OneDrive/Documents/DavidSeijo.iOSApp/iOSELD/ATHOS/src/bluetooth/ProcessData.java",
+		"/C/Users/David/AppData/Local/Temp/Temp1_Apollo-5.zip/Apollo-5/Apollo/DriverBL.m",
+		"/C/Users/David/AppData/Local/Temp/Temp1_Apollo-5.zip/Apollo-5/Apollo/DBManager.h",
+		"/C/Users/David/AppData/Local/Temp/Temp1_Apollo-5.zip/Apollo-5/Apollo/DBManager.m",
+		"/C/Users/David/AppData/Local/Temp/Temp1_fivehundred-stellar_1.0.5.zip/fivehundred-stellar/entry-meta.php",
+		"/C/Users/David/OneDrive/Documents/DavidSeijo.iOSApp/iOSELD/ATHOS/src/bluetooth/SimpleParamDouble.java",
+		"/C/Users/David/OneDrive/Documents/DavidSeijo.iOSApp/iOSELD/ATHOS/src/bluetooth/SimpleParamString.java",
+		"/C/Users/David/Desktop/Vineet/ClarifyViews/ClarifyResponse.java",
+		"/C/Users/David/Desktop/Clarify.java",
+		"/C/Users/David/OneDrive/Documents/DavidSeijo.iOSApp/iOSELD/ATHOS/src/classes/Violation.java",
+		"/C/Users/David/Desktop/Apollo/Apollo/Apollo/HoursServicesDashboard.m",
+		"/C/Users/David/OneDrive/Documents/DavidSeijo.iOSApp/iOSELD/ATHOS/src/at/hos/LogListActivity.java",
+		"/C/Users/David/OneDrive/Documents/DavidSeijo.iOSApp/iOSELD/ATHOS/src/at/hos/LogListAdapter.java",
+		"/C/Users/David/OneDrive/Documents/DavidSeijo.iOSApp/iOSELD/ATHOS/src/at/hos/ViolationListAdapter.java",
+		"/C/Users/David/OneDrive/Documents/DavidSeijo.iOSApp/iOSELD/ATHOS/src/at/hos/ViolationListActivity.java",
+		"/C/Users/David/OneDrive/Documents/DavidSeijo.iOSApp/iOSELD/ATHOS/src/utils/Utils.java",
+		"/C/Users/David/Desktop/CoDriverActivity.java",
+		"/C/Users/David/AppData/Local/Temp/Temp2_Apollo.zip/Apollo/Apollo/HoursServicesDashboard.m",
+		"/C/Users/David/OneDrive/Documents/2. DPL.com/adminApp/index.html",
+		"/C/Users/David/OneDrive/Documents/2. DPL.com/MPSystemRequirements.md",
+		"/C/Users/David/OneDrive/Documents/ConstructionPrograms/MPSystemRequirements.md",
+		"/C/Users/David/OneDrive/Documents/Netsuite/testCalcCanadaPostShipping.js",
+		"/C/Users/David/OneDrive/Documents/Python/randomScripts/HR.euler1.Mult3and5.py",
+		"/C/Users/David/OneDrive/Documents/Netsuite/testAddSEEDS.js",
+		"/C/Users/David/OneDrive/Documents/DavidSeijo.iOSApp/iOSELD/ATHOS/src/classes/DriverAcum.java",
+		"/C/Users/David/OneDrive/Documents/DavidSeijo.iOSApp/iOSELD/ATHOS/src/dataAccess/MySQLClass.java",
+		"/C/Users/David/OneDrive/Documents/DavidSeijo.iOSApp/iOSELD/ATHOS/src/at/hos/CoDriverActivity.java",
+		"/C/Users/David/Desktop/BluetoothService.java",
+		"/C/Users/David/Desktop/HoursServicesDashboard.m",
+		"/C/Users/David/Desktop/MySQLClass.java",
+		"/C/Users/David/Desktop/Reachability.m",
+		"/C/Users/David/Desktop/Utility.m",
+		"/C/Users/David/Desktop/ViewController.m",
+		"/C/Users/David/Desktop/WebServiceControl.java",
+		"/C/Users/David/AppData/Local/Temp/Temp3_Apollo.zip/Apollo/Apollo/LoginSupport.m",
+		"/C/Users/David/AppData/Local/Temp/Temp3_Apollo.zip/Apollo/Apollo/Shipments.m",
+		"/C/Users/David/AppData/Local/Temp/Temp3_Apollo.zip/Apollo/Apollo/VehicleProfile.m",
+		"/C/Users/David/OneDrive/Documents/DavidSeijo.iOSApp/iOSELD/ATHOS/src/classes/Driver.java",
+		"/C/Users/David/OneDrive/Documents/DavidSeijo.iOSApp/iOSELD/ATHOS/src/bussinessLogic/LogbookBL.java",
+		"/C/Users/David/AppData/Local/Temp/Temp1_Apollo.zip/Apollo/Apollo/HoursServicesDashboard.m",
+		"/C/Users/David/OneDrive/Documents/Python/randomScripts/nthHappyNumber.py",
+		"/C/Users/David/OneDrive/Documents/DavidSeijo.iOSApp/iOSELD/ATHOS/src/bussinessLogic/Utils.java",
+		"/C/Users/David/OneDrive/Documents/DavidSeijo.iOSApp/iOSELD/ATHOS/src/services/AlarmService.java",
+		"/C/Users/David/AppData/Local/Temp/Temp1_Apollo.zip/Apollo/Apollo/CoDriverLogin.m",
+		"/C/Users/David/OneDrive/Documents/Python/randomScripts/HR.ListComprehension.py",
+		"/C/Users/David/OneDrive/Documents/Python/randomScripts/HR.lists.py",
+		"/C/Users/David/OneDrive/Documents/Python/randomScripts/Grades.py",
+		"/C/Users/David/OneDrive/Documents/Javascript/varScoping.js",
+		"/C/Users/David/AppData/Local/Temp/Temp1_kickstarter reach 3d printer.zip/firmware/Marlin/SdFatUtil.cpp",
+		"/C/Users/David/Downloads/GetRates.php"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/David/OneDrive/Documents/DevOps/TechnicalArticles/DataModel.UserDetail.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 142,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								142,
+								142
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 57.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/C++/C++ Single File.sublime-build",
+	"project": "SpectrumDocs.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 750.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\David\\OneDrive\\Documents\\DevOps\\new-git-project\\ProjectTemplate.sublime-project"
+			]
+		],
+		"width": 570.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 350.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
