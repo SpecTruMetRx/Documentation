@@ -36,7 +36,7 @@ This table is used as a master list of users where we store mappings of all user
 
 
 ### Table
-|TableName: | Users | . | . | . | MasterList |
-|:----------|:-----:|:----------:| . | . | . |
+|TableName: | Users | a | a | a | MasterList |
+|:----------|:-----:|:----------:|:--:|:--:|:--:|
 |Partition Key| Sort Key| Attribute1 | Attribute2 | Attribute3 | Attribute4 |
 | awsId       | orgType | provType   |   provType |   provType |
