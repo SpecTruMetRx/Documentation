@@ -23,8 +23,8 @@ This table is used as a master list of users where we store mappings of all user
 
 
 ### Table
-|Table: |
-|:------|
+|Table: |||
+|:------|||
 |Partition Key|Sort Key| Attributes |
 |:------------|:-------|:-----------|
 | awsId | orgType | testAttr |
