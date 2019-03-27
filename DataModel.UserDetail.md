@@ -39,6 +39,6 @@ This table is used as a master list of users where we store mappings of all user
 |TableName: | Users | - | - | - | - | - | - | - | - | MasterList |
 |:----------|:-----:|:----------:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 |Partition Key| Sort Key| Attribute1 | Attribute2 | Attribute3 | Attribute4 | Attribute4 | Attribute4 | Attribute4 | Attribute4 | Attribute4 |
-| awsId       | orgType | provType   |   CompanyName | fName | lName | ein | ssn | email | acquisitionSrc | memberSince |
-| String: uuid | String: *Patient, Provider, Clinic, Dr., Insurer, Lender, Investor, SysAdmin* | String: *Behavior Analysts, Dental, OT/PT, Urgent-Care, Hospitals* | String: *Validate with ParserUtility* | String | String | Number: *Validate against IRS* | Number: *Validate against Dept Of State* | String: *Validate against ISO Standard & Domain Rules* | String: ** | String: Date() |
+| awsId       | orgType | provType   |   CompanyName | firstName | lastName | ein | ssn | email | acquisitionSrc | memberSince |
+| **String**: uuid | **String**: *Patient, Provider, Clinic, Dr., Insurer, Lender, Investor, SysAdmin* | **String**: *Behavior Analysts, Dental, OT/PT, Urgent-Care, Hospitals* | **String**: *Validate with ParserUtility* | **String** | **String** | **Number**: *Validate against IRS* | **Number**: *Validate against Dept Of State* | **String**: *Validate against ISO Standard & Domain Rules* | **String**: ** | **String**: Date() |
 
