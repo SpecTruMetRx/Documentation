@@ -38,7 +38,7 @@ This table is used as a master list of users where we store mappings of all user
 
 |TableName: | Users | - | - | - | - | - | - | - | - | MasterList |
 |:----------|:-----:|:----------:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|Partition Key| Sort Key| Attribute1 | Attribute2 | Attribute3 | Attribute4 | Attribute4 | Attribute4 | Attribute4 | Attribute4 | Attribute4 |
+|**Partition** Key| **Sort** Key| **LSI**: Attribute1 | **LSI**: Attribute2 | Attribute3 | Attribute4 | Attribute5 | Attribute6 | Attribute7 | Attribute8 | Attribute9 |
 | awsId       | orgType | provType   |   CompanyName | firstName | lastName | ein | ssn | email | acquisitionSrc | memberSince |
 | **String**: uuid | **String**: *Patient, Provider, Clinic, Dr., Insurer, Lender, Investor, SysAdmin* | **String**: *Behavior Analysts, Dental, OT/PT, Urgent-Care, Hospitals* | **String**: *Validate with ParserUtility* | **String** | **String** | **Number**: *Validate against IRS* | **Number**: *Validate against Dept Of State* | **String**: *Validate against ISO Standard & Domain Rules* | **String**: ** | **String**: Date() |
 
