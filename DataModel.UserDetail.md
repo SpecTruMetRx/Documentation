@@ -1,8 +1,12 @@
-# User Detail
+# SpecTruMetRx Data Model
+
+This is the *data modeling* document for the SpecTruMetRx Payments & Heathcare Analytics solution. Please add to and use this document to implement a scalable and consistent data model that will be encrypted and secure within the AWS Cloud.
+
+## User Detail Data Dictionary
 
 This table is used as a master list of users where we store mappings of all users to our [AWS Cognito User & Identity Pools]() with a UUID.
 
-## User Detail Queries
+### User Detail Queries
 
 1. How many `users` by `OrgType`?
 	* Filer by: `ProvType`
@@ -30,12 +34,8 @@ This table is used as a master list of users where we store mappings of all user
 
 6. How many `users` by `city`
 
-### User Detail Data Dictionary
+#### User Detail Table
 
-
-
-
-### Table
 |TableName: | Users | - | - | - | MasterList |
 |:----------|:-----:|:----------:|:--:|:--:|:--:|
 |Partition Key| Sort Key| Attribute1 | Attribute2 | Attribute3 | Attribute4 |
