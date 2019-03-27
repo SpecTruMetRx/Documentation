@@ -6,16 +6,29 @@ This table is used as a master list of users where we store mappings of all user
 
 1. How many `users` by `OrgType`?
 	* Filer by: `ProvType`
+	* Sort by: `CompanyName`
+
 2. How many `users` by `ProviderType`?
 	* Filer by: `OrgType`
-3. How many `users` for each Corporate Name?
+	* Sort by: `CompanyName`
+
+3. How many `users` for each `CompanyName`?
+	* Filter by `OrgType`
 	* Sort by `SSN` or `EIN`
-4. Get `user` by `provType`. Filter by:
-	* Joined < || > date()
-	* `user` by `txnCount` DESC
-	* `user` by `txnVolume` DESC
-5. Get `user` by `acquisitionType`
-6. Get total `users` by `city`
+
+4. Find `user` by `provType`.
+	* Filter by:
+		1. `DateJoined` < || > date()
+	* Sort by: `user` by `txnCount` DESC
+
+5. Find `user` by `provType`.
+	* Filter by:
+		1. `DateJoined` < || > date()
+	* Sort by: `user` by `txnVolume` DESC
+
+5. How many `users` by `acquisitionType`
+
+6. How many `users` by `city`
 
 ### User Detail Data Dictionary
 
@@ -23,8 +36,7 @@ This table is used as a master list of users where we store mappings of all user
 
 
 ### Table
-|TableName: | Users | Master |
-|-------|:------|:------|
-|Partition Key|Sort Key| Attributes |
-|:------------|:-------|:-----------|
-| awsId | orgType | testAttr |
+|TableName: | Users | MasterList |
+|:----------|:-----:|:----------:|
+|Partition Key| Sort Key| Attribute1 | Attribute2 | Attribute3 | Attribute4 |
+| awsId       | orgType | provType   |   provType |   provType |
