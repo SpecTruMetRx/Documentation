@@ -36,7 +36,8 @@ This table is used as a master list of users where we store mappings of all user
 
 #### User Detail Table
 
-|TableName: | Users | - | - | - | MasterList |
-|:----------|:-----:|:----------:|:--:|:--:|:--:|
-|Partition Key| Sort Key| Attribute1 | Attribute2 | Attribute3 | Attribute4 |
-| awsId       | orgType | provType   |   provType |   provType |
+|TableName: | Users | - | - | - | - | - | - | - | - | MasterList |
+|:----------|:-----:|:----------:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|Partition Key| Sort Key| Attribute1 | Attribute2 | Attribute3 | Attribute4 | Attribute4 | Attribute4 | Attribute4 | Attribute4 | Attribute4 |
+| awsId       | orgType | provType   |   CompanyName | fName | lname | ein | ssn | email | acquisitionSrc | memberSince |
+
