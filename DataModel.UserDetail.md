@@ -33,15 +33,7 @@ This table is used as a master list of users where we store mappings of all user
 * `awsId`: *String: Verify user authentication against AWS Cognito.*
 * `orgType`: *String: list[]*
 
-	1. Patient
-	2. Provider
-	3. Clinic
-	4. ReferringPhysician
-	5. Insurer
-	6. Lender
-	7. Investor
-	8. UserServices
-	9. SystemAdmin
+- [ ] [*Patient*, *Provider*, *Clinic*, *ReferringPhysician*, *Insurer*, *Lender*, *Investor*, *UserServices*, *SystemAdmin*]
 
 * `providerType`: *String: list[]*
 
@@ -53,7 +45,7 @@ This table is used as a master list of users where we store mappings of all user
 
 * `SpectrumHashId`: *String: Naming Convention to reflect different entities.*
 
-	1.
+	1. `orgType`.`providerType`.
 
 * `CompanyName`: *String: Validate with CorporateParser Utility.*
 * `firstName`: *String*
