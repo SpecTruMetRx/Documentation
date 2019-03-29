@@ -1,5 +1,7 @@
 # SpecTruMetRx Data Model
 
+[Video](https://www.youtube.com/watch?v=HaEPXoXVf2k)
+
 This is the *data modeling* document for the SpecTruMetRx Payments & Heathcare Analytics solution. Please add to and use this document to implement a scalable and consistent data model that will be encrypted and secure within the AWS Cloud.
 
 In using a **NoSQL** database like *DynamoDB*, our goal is to scale our *OnLine Transaction Processing (OLTP)* capabilities to meet the realtime demands of our users to process their requests with sub-second latency. We are optimizing denormalized and hierarchical data for compute processing & data streaming to instantiate real-time views that scale horizontally as built for OLTP.
@@ -12,11 +14,36 @@ Every table is like a catalog that has items with a set of attributes. Every ite
 
 Optionally, but more than likely required, you will need to declare a *sort key* attribute that will give you the ability to execute complex range queries aganist the items in the partition keys. You can think of the items with the partitions as a folder or a bucket with items. The sort key orders the items within the folder. When you query the partitions, or the folders, you can execute the queries with complex range operators.
 
-When modeling a new data table, always model your partition and sort keys in a way that will let you model the table to support one of your primary access patterns. You always want the table to be able to query something that is interesting to the application. Partition keys both uniquely identify the item and build an unordered hash index while distributing items evenly, so that every table represents a unique and logical keyspace. When querying the NoSQL DB providing the partition key as a condition of equality, so the system can find the correct storage node to get to so the DB can read the data needed by the user. Including the sort key will let the DB sort the data read in the partition to find the correct data to read faster.
+When modeling a new data table, always model your partition and sort keys in a way that will let you model the table to support one of your primary access patterns. You always want the table to be able to query something that is interesting to the application. Partition keys both uniquely identify the item and build an unordered hash index while distributing items evenly, so that every table represents a unique and logical keyspace.
+
+When querying the NoSQL DB providing the partition key as a condition of equality, so the system can find the correct storage node to get to so the DB can read the data needed by the user. Including the sort key will let the DB sort the data read in the partition to find the correct data to read faster.
+
+* **Data Modeling:** Avoid relational design patterns and *use one table*.
+
+* **MicroService Decoupling:** Use only one table for each service to capture data with *one round trip*. Simplify your query to use a `SELECT * FROM [table]` type access patterns.
+
+* **Identify Primary Keys:** How will your items be inserted into and read from the table in your *microservice*? Overload items into partitions.
+
+* **Define indexes for secondary access patterns:** In general, our DynamoDB cost and performance will be best if we restrict ourself to “gets” (key/value lookups on single items) and “queries” (conditional lookup on items that have the same partition key, but different range/sort keys). Scanning, where we indiscriminately gobble all items from a table, is a slow, expensive antipattern. Useful gets and queries [require useful indexes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-indexes.html).
+
 
 ## User Detail Data Dictionary
 
-This table is used as a master list of users where we store mappings of all users to our [AWS Cognito User & Identity Pools]() with a UUID.
+This table is used as a master list of users where we store mappings of all users to our [AWS Cognito User & Identity Pools]() with a UUID. Below is a list of the attributes we will store in the `UserDetail` Service:
+
+* `awsId`: *String*
+* `orgType`: *String*
+* `providerType`: *String*
+* `CompanyName`: *String: Validate with CorporateParser Utility*
+* `firstName`: *String*
+* `lastName`: *String*
+* `ein`: *Number: Validate against IRS*
+* `ssn`: *Number: Validate against Dept. of State*
+* `email`: *String: Validate against ISO & Domain rules.*
+* `acquisitionSrc`: *String: ** *
+* `memberSince`: *String: Date()*
+
+
 
 ### User Detail Queries
 
