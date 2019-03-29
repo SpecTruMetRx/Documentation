@@ -28,20 +28,17 @@ When querying the NoSQL DB providing the partition key as a condition of equalit
 
 ## User Detail Data Dictionary
 
-This table is used as a master list of users where we store mappings of all users to our [AWS Cognito User & Identity Pools]() with a UUID. Below is a list of the attributes we will store in the `UserDetail` Service:
+This table is used as a master list of users where we store mappings of all users to our [AWS Cognito User & Identity Pools]() with a UUID. Below is a list of the `attributes` we will store in the `UserDetail` service **DynamoDB** Table.:
 
 * `awsId`: *String: Verify user authentication against AWS Cognito.*
+
 * `orgType`: *String: list[]*
 
 	- [ ] [*Patient*, *Provider*, *Clinic*, *ReferringPhysician*, *Insurer*, *Lender*, *Investor*, *UserServices*, *SystemAdmin*]
 
 * `providerType`: *String: list[]*
 
-	1. ABA
-	2. Dental
-	3. OT/PT
-	4. UrgentCareFacility
-	5. Hospital
+	- [ ] [*ABA*, *Dental*, *OT/PT*, *UrgentCareFacility*, *Hospital*]
 
 * `SpectrumHashId`: *String: Naming Convention to reflect different entities.*
 
@@ -50,11 +47,38 @@ This table is used as a master list of users where we store mappings of all user
 * `CompanyName`: *String: Validate with CorporateParser Utility.*
 * `firstName`: *String*
 * `lastName`: *String*
+* `systemRole`: *String*
+* `authorizor`: *String*
 * `ein`: *Number: Validate against IRS.*
 * `ssn`: *Number: Validate against Dept. of State.*
+
 * `email`: *String: Validate against ISO & Domain rules.*
+* `officePhone`:
+* `cellPhone`:
+* `Address Line1`
+* `Address Line2`
+* `Address Line1`
+* `City`
+* `State`
+* `Country`
+* `ZipCode`
+
 * `acquisitionSrc`: *String: TBD*
 * `memberSince`: *String: Date()*
+* `lastLogin`: *String: Date()*
+* `loginIPs`: *Number: list[]*
+	- [ ] *Store & record the UNIQUE IP address for every successful login attempt*>
+* `attemptedLoginIPs`: *Number: list[]*
+	- [ *ip.address1.date()*, *ip.address2.date()* ] *Store & record the IP address for every UNsuccessful login attempt: 90-day TTL*>
+
+* `txnCount`
+
+* `txnUSDVol`
+
+* `claimUSDVol`
+
+
+
 
 ### User Detail Queries
 
