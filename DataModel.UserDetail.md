@@ -8,9 +8,11 @@ Our decision to implement *DynamoDb* happens when we know our application's *dat
 
 If the data needs to be reshaped with `JOIN` methods, then it would be best to consider [AWS RedShift]() as a `DataWarehouse` solution for any `data analytics` that has to be performed on the data. *OLTP* applications are ideal use cases for *NoSQL* data bases
 
-When modeling a new data table, always model your partition and sort keys in a way that will let you model the table to support one of your primary access patterns. You always want the table to be able to query something that is interesting to the application.
+Every table is like a catalog that has items with a set of attributes. Every item does not have to have the same set of *attributes*. However, every item, or row in a table, has to have a *partition key* defined as part of the table schema that will uniquely identify the item in the table.
 
+Optionally, but more than likely required, you will need to declare a *sort key* attribute that will give you the ability to execute complex range queries aganist the items in the partition keys. You can think of the items with the partitions as a folder or a bucket with items. The sort key orders the items within the folder. When you query the partitions, or the folders, you can execute the queries with complex range operators.
 
+When modeling a new data table, always model your partition and sort keys in a way that will let you model the table to support one of your primary access patterns. You always want the table to be able to query something that is interesting to the application. Partition keys both uniquely identify the item and build an unordered hash index while distributing items evenly, so that every table represents a unique and logical keyspace. When querying the NoSQL DB providing the partition key as a condition of equality, so the system can find the correct storage node to get to so the DB can read the data needed by the user. Including the sort key will let the DB sort the data read in the partition to find the correct data to read faster.
 
 ## User Detail Data Dictionary
 
