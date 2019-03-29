@@ -33,7 +33,7 @@ This table is used as a master list of users where we store mappings of all user
 * `awsId`: *String: Verify user authentication against AWS Cognito.*
 * `orgType`: *String: list[]*
 
-- [ ] [*Patient*, *Provider*, *Clinic*, *ReferringPhysician*, *Insurer*, *Lender*, *Investor*, *UserServices*, *SystemAdmin*]
+	- [ ] [*Patient*, *Provider*, *Clinic*, *ReferringPhysician*, *Insurer*, *Lender*, *Investor*, *UserServices*, *SystemAdmin*]
 
 * `providerType`: *String: list[]*
 
