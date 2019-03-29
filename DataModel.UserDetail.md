@@ -26,24 +26,43 @@ When querying the NoSQL DB providing the partition key as a condition of equalit
 
 * **Define indexes for secondary access patterns:** In general, our DynamoDB cost and performance will be best if we restrict ourself to “gets” (key/value lookups on single items) and “queries” (conditional lookup on items that have the same partition key, but different range/sort keys). Scanning, where we indiscriminately gobble all items from a table, is a slow, expensive antipattern. Useful gets and queries [require useful indexes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-indexes.html).
 
-
 ## User Detail Data Dictionary
 
 This table is used as a master list of users where we store mappings of all users to our [AWS Cognito User & Identity Pools]() with a UUID. Below is a list of the attributes we will store in the `UserDetail` Service:
 
-* `awsId`: *String*
-* `orgType`: *String*
-* `providerType`: *String*
-* `CompanyName`: *String: Validate with CorporateParser Utility*
+* `awsId`: *String: Verify user authentication against AWS Cognito.*
+* `orgType`: *String: list[]*
+
+	1. Patient
+	2. Provider
+	3. Clinic
+	4. ReferringPhysician
+	5. Insurer
+	6. Lender
+	7. Investor
+	8. UserServices
+	9. SystemAdmin
+
+* `providerType`: *String: list[]*
+
+	1. ABA
+	2. Dental
+	3. OT/PT
+	4. UrgentCareFacility
+	5. Hospital
+
+* `SpectrumHashId`: *String: Naming Convention to reflect different entities.*
+
+	1.
+
+* `CompanyName`: *String: Validate with CorporateParser Utility.*
 * `firstName`: *String*
 * `lastName`: *String*
-* `ein`: *Number: Validate against IRS*
-* `ssn`: *Number: Validate against Dept. of State*
+* `ein`: *Number: Validate against IRS.*
+* `ssn`: *Number: Validate against Dept. of State.*
 * `email`: *String: Validate against ISO & Domain rules.*
-* `acquisitionSrc`: *String: ** *
+* `acquisitionSrc`: *String: TBD*
 * `memberSince`: *String: Date()*
-
-
 
 ### User Detail Queries
 
