@@ -52,6 +52,17 @@ This table is used as a master list of users where we store mappings of all user
 * `ein`: *Number: Validate against IRS.*
 * `ssn`: *Number: Validate against Dept. of State.*
 
+* `npi`
+* `medicaidProviderNum`
+
+* `insuredUniqueId`
+* `medicaidIdNum`
+* `recipientId`
+* `accountNum`: *Number: AHCA Cross Reference.*
+
+* `birthdate`
+* `treatmentAuthCode`
+
 * `email`: *String: Validate against ISO & Domain rules.*
 * `officePhone`:
 * `cellPhone`:
@@ -69,7 +80,7 @@ This table is used as a master list of users where we store mappings of all user
 * `loginIPs`: *Number: list[]*
 	- [ ] *Store & record the UNIQUE IP address for every successful login attempt*>
 * `attemptedLoginIPs`: *Number: list[]*
-	- [ *ip.address1.date()*, *ip.address2.date()* ] *Store & record the IP address for every UNsuccessful login attempt: 90-day TTL*>
+	- [ ] [ *ip.address1.date()*, *ip.address2.date()* ] *Store & record the IP address for every UNsuccessful login attempt: 90-day TTL*
 
 * `txnCount`
 
