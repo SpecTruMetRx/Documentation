@@ -51,6 +51,8 @@ The `UserDetail` Table is the master list of users where we store mappings of al
 	* `CompanyName`: *String: Validate with CorporateParser Utility.*
 	* `firstName`: *String*
 	* `lastName`: *String*
+	* `acquisitionSrc`: *String: TBD*
+	* `memberSince`: *String: Date()*
 	* `systemRole`: *String: list[]*
 
 		- [ ] [*PracticeAdmin*, *Clinician*, *Intern*, *Supervisor*, *ClinicalAdministrator*, *PracticeScheduler*, *BillerAdmin*, *BillerClerk*, *Insurer*, *LenderAdmin*, *LenderClerk*, *Investor*, *UserServices*, *SystemAdmin*]
@@ -71,6 +73,7 @@ The `UserDetail` Table is the master list of users where we store mappings of al
 		- [ ] **SystemAdmin**
 
 	* `authorizor`: *String*
+	* `status`: *String*
 
 3. **User Credentials & Licensure**
 
@@ -82,9 +85,13 @@ The `UserDetail` Table is the master list of users where we store mappings of al
 	* `recipientId`
 	* `accountNum`: *Number: AHCA Cross Reference.*
 
+	* `practiceWebAddress`
+	* `ein`: *Number: Validate against IRS.*
+	* `placeOfServiceCode`
+	* `taxonomyCode`
+
 4. **User Personal & Identifiable Information**
 
-	* `ein`: *Number: Validate against IRS.*
 	* `ssn`: *Number: Validate against Dept. of State.*
 
 	* `treatmentAuthCode`
@@ -117,25 +124,17 @@ The `UserDetail` Table is the master list of users where we store mappings of al
 
 	* `UserObject`: *user[type: PCP, Emergency Contact, Guardian, Responsible Party for Billing]*
 
-5. **User Metadata**
+5. **User Security and Activity**
 
-* `acquisitionSrc`: *String: TBD*
-* `memberSince`: *String: Date()*
-* `lastLogin`: *String: Date()*
-* `loginIPs`: *Number: list[]*
-	- [ ] *Store & record the UNIQUE IP address for every successful login attempt*>
-* `attemptedLoginIPs`: *Number: list[]*
-	- [ ] [ *ip.address1.date()*, *ip.address2.date()* ] *Store & record the IP address for every UNsuccessful login attempt: 90-day TTL*
-
-6. **User Transaction Data**
-* `txnCount`
-
-* `txnUSDVol`
-
-* `claimUSDVol`
-
-
-
+* `date`: *String: Date()*
+* `action`: *String: list[]*
+	- [ ] *List Actions*
+* `actionTakenBy`: *String:  list[]*
+	- [ ] [ *{ lastName, firstName }*, *ip.address* ] *Store & record the IP address for every action or event triggered by every user.*
+* `actedUpon`: *String:  `User: lastName, firstName`*
+	- [ ] *Store & record the user whose record is affected by another action or event triggered by system users including self!*
+* `Description`:
+	- [ ] *Describe Action Taken*: Source from HashMap of Actions:DataStructure
 
 ### User Detail Queries
 
