@@ -28,51 +28,81 @@ When querying the NoSQL DB providing the partition key as a condition of equalit
 
 ## User Detail Data Dictionary
 
-This table is used as a master list of users where we store mappings of all users to our [AWS Cognito User & Identity Pools]() with a UUID. Below is a list of the `attributes` we will store in the `UserDetail` service **DynamoDB** Table.:
+The `UserDetail` Table is the master list of users where we store mappings of all users to our [AWS Cognito User & Identity Pools]() with a UUID. Below is a list of the `attributes` we will store in the `UserDetail` service **DynamoDB** Table:
 
-* `awsId`: *String: Verify user authentication against AWS Cognito.*
+1. **Unique Identifiers**
 
-* `orgType`: *String: list[]*
+	* `awsId`: *String: Verify user authentication against AWS Cognito.*
 
-	- [ ] [*Patient*, *Provider*, *Clinic*, *ReferringPhysician*, *Insurer*, *Lender*, *Investor*, *UserServices*, *SystemAdmin*]
+	* `orgType`: *String: list[]*
 
-* `providerType`: *String: list[]*
+		- [ ] [*Patient*, *Provider*, *Clinic*, *ReferringPhysician*, *Insurer*, *Lender*, *Investor*, *UserServices*, *SystemAdmin*]
 
-	- [ ] [*ABA*, *Dental*, *OT/PT*, *UrgentCareFacility*, *Hospital*]
+	* `providerType`: *String: list[]*
 
-* `SpectrumHashId`: *String: Naming Convention to reflect different entities.*
+		- [ ] [*ABA*, *Dental*, *OT/PT*, *UrgentCareFacility*, *Hospital*]
 
-	1. `orgType`.`providerType`.
+	* `SpectrumHashId`: *String: Naming Convention to reflect different entities.*
 
-* `CompanyName`: *String: Validate with CorporateParser Utility.*
-* `firstName`: *String*
-* `lastName`: *String*
-* `systemRole`: *String*
-* `authorizor`: *String*
-* `ein`: *Number: Validate against IRS.*
-* `ssn`: *Number: Validate against Dept. of State.*
+		1. `orgType`.`providerType`.
 
-* `npi`
-* `medicaidProviderNum`
+2. **General User Information**
 
-* `insuredUniqueId`
-* `medicaidIdNum`
-* `recipientId`
-* `accountNum`: *Number: AHCA Cross Reference.*
+	* `CompanyName`: *String: Validate with CorporateParser Utility.*
+	* `firstName`: *String*
+	* `lastName`: *String*
+	* `systemRole`: *String: list[]*
 
-* `birthdate`
-* `treatmentAuthCode`
+		- [ ] [*PracticeAdmin*, *Clinician*, *Intern*, *Supervisor*, *ClinicalAdministrator*, *PracticeScheduler*, *PracticeBiller*, *UserServices*, *SystemAdmin*]
 
-* `email`: *String: Validate against ISO & Domain rules.*
-* `officePhone`:
-* `cellPhone`:
-* `Address Line1`
-* `Address Line2`
-* `Address Line1`
-* `City`
-* `State`
-* `Country`
-* `ZipCode`
+	* `authorizor`: *String*
+
+3. **User Credentials & Licensure**
+
+	* `npi`
+	* `medicaidProviderNum`
+
+	* `insuredUniqueId`
+	* `medicaidIdNum`
+	* `recipientId`
+	* `accountNum`: *Number: AHCA Cross Reference.*
+
+4. **User Personal & Identifiable Information**
+
+	* `ein`: *Number: Validate against IRS.*
+	* `ssn`: *Number: Validate against Dept. of State.*
+
+	* `treatmentAuthCode`
+	* `dateOfBirth`
+
+	* `birthSex`
+	* `genderIdentity`
+	* `sexualOrientation`
+	* `race`
+	* `languages`
+	* `maritalStatus`
+	* `employment`
+	* `hipaa` *bool: Patient/Guardian signed HIPPA NPP*
+	* `pcpRelease` *blockchain: Primary Care Physician Release PHI Auth*
+
+	* `email`: *String: Validate against ISO & Domain rules.*
+	* `officePhone`:
+	* `homePhone`:
+	* `cellPhone`:
+	* `otherPhone`:
+	* `Address Line1`
+	* `Address Line2`
+	* `Address Line1`
+	* `City`
+	* `State`
+	* `Country`
+	* `ZipCode`
+
+5. **User Additional Contact Information**
+
+	* `UserObject`: *user[type: PCP, Emergency Contact, Guardian, Responsible Party for Billing]*
+
+5. **User Metadata**
 
 * `acquisitionSrc`: *String: TBD*
 * `memberSince`: *String: Date()*
@@ -82,6 +112,7 @@ This table is used as a master list of users where we store mappings of all user
 * `attemptedLoginIPs`: *Number: list[]*
 	- [ ] [ *ip.address1.date()*, *ip.address2.date()* ] *Store & record the IP address for every UNsuccessful login attempt: 90-day TTL*
 
+6. **User Transaction Data**
 * `txnCount`
 
 * `txnUSDVol`
