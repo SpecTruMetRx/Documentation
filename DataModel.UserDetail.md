@@ -53,7 +53,22 @@ The `UserDetail` Table is the master list of users where we store mappings of al
 	* `lastName`: *String*
 	* `systemRole`: *String: list[]*
 
-		- [ ] [*PracticeAdmin*, *Clinician*, *Intern*, *Supervisor*, *ClinicalAdministrator*, *PracticeScheduler*, *PracticeBiller*, *UserServices*, *SystemAdmin*]
+		- [ ] [*PracticeAdmin*, *Clinician*, *Intern*, *Supervisor*, *ClinicalAdministrator*, *PracticeScheduler*, *BillerAdmin*, *BillerClerk*, *Insurer*, *LenderAdmin*, *LenderClerk*, *Investor*, *UserServices*, *SystemAdmin*]
+
+		- [ ] **PracticeAdmin**: A Spectrum Practice Administrator can add and edit a Company's users
+		- [ ] **Clinician**
+		- [ ] **Intern**
+		- [ ] **Supervisor**
+		- [ ] **ClinicalAdmin**
+		- [ ] **PracticeScheduler**
+		- [ ] **BillerAdmin**
+		- [ ] **BillerClerk**
+		- [ ] **Insurer**
+		- [ ] **LenderAdmin**
+		- [ ] **LenderClerk**
+		- [ ] **Investor**
+		- [ ] **UserServices**
+		- [ ] **SystemAdmin**
 
 	* `authorizor`: *String*
 
