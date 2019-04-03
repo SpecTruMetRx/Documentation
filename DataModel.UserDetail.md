@@ -160,9 +160,48 @@ The hierarchical nature of each query that requests data from our instance of Dy
 
 #### Patient Access Patterns
 
-Patient
+This data will be a table that will list all of the patients assigned to that `clinic` or `provider` depending on the `role` and `authorization` of the provider triggering the request to the DB. The following fields should be represented on the UI appropriately after receiving the response from the Lambda to pull the appropriate data from the table.
+
+This entire request **MUST** be cached and used for subsequent requests to minimize data `reads` from DynamoDB. Cases that read a small number of items more frequently must mitigate the impacts of a "hot-key" and a non-uniform data distribution. We will offload, or try to as much as possible, our application `read` or `RCU` activity to a **DAX CACHE** for a soon to be determined `event` length.
+
+* `List`
+	1. `Patient Name`
+	2. `DOB`
+	3. `Primary Phone`
+	4. `Last Appointment`
+	5. `Next Appointment`
+	6. `Payer`
+	7. `Clinicians`
+
+* `Patient Detail`
+	1. `Patient Info`
+		* `Patient Comments`
+		* `Patient Information`
+		* `Contacts`
+
+	2. `Action Items`
+		* `Date`
+		* `Action Item`
+
+	3. `Schedule`
+		* `Agenda Items`
+
+	4. `Documents`
+	5. `Patient Billing`
+	6. `Billing Settings`
+	7. `Clinicians`
+	8. `Portal`
 
 #### Staff Access Patterns
+
+* `List`
+	1. `Full Name`
+	2. `DOB`
+	3. `Primary Phone`
+	4. `Type of Clinician`
+	5. `Roles`
+	6. `2FA`
+	7. `Clinicians`
 
 #### Payer Access Patterns
 

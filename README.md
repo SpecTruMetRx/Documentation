@@ -25,7 +25,11 @@ Lenders and financial institutions can issue debt through the SpecTruMetRx API t
 - [ ] Pharmacy Benefits Managers
 
 ## Data Model
-* [SpectrumDataModeling](https://github.com/SpecTruMetRx/Documentation/blob/master/DataModel.pdf)
+* [DataModel.Users](https://github.com/SpecTruMetRx/Documentation/blob/master/DataModel.UserDetail.md)
+* [DataModel.Schedule](https://github.com/SpecTruMetRx/Documentation/blob/master/DataModel.Schedule.md)
+* [DataModel.TreatmentLog](https://github.com/SpecTruMetRx/Documentation/blob/master/DataModel.TreatmentLog.md)
+
+
 
 ## UML Sequence Diagram
 * [Sequence Diagram](https://github.com/SpecTruMetRx/Documentation/blob/master/SpectrumUML.Sequence.Master.pdf)
