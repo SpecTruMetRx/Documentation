@@ -136,7 +136,37 @@ The `UserDetail` Table is the master list of users where we store mappings of al
 * `Description`:
 	- [ ] *Describe Action Taken*: Source from HashMap of Actions:DataStructure
 
-### User Detail Queries
+### User Detail Access Patterns
+
+The `Access Patterns` defined below reflect the queries that will generate the `read` requests sent to our DynamoDB. The goal is to design a series of `partition`, `sort`, & `LSI` keys that we can use to capture the data needed for each view that underlies each `Access Pattern`.
+
+The hierarchical nature of each query that requests data from our instance of DynamoDB will follow a format similar to the following:
+
+* `List`
+	1. `Name`
+	2. Information specific to each entity defined below
+
+* `Detail`
+
+	1. `Detail Info`
+		* Additional items and structures specific to each entity defined in the coming sections.
+	2. `Action Items`
+	3. `Schedule`
+	4. `Documents`
+	5. `Billing` or `Payroll`
+	6. `Billing Settings`
+	7. `Clinicians` or `Patients`
+	8. `Dashboard`
+
+#### Patient Access Patterns
+
+Patient
+
+#### Staff Access Patterns
+
+#### Payer Access Patterns
+
+
 
 1. How many `users` by `OrgType`?
 	* Filter by: `ProvType`
