@@ -26,7 +26,7 @@ When querying the NoSQL DB providing the partition key as a condition of equalit
 
 * **Define indexes for secondary access patterns:** In general, our DynamoDB cost and performance will be best if we restrict ourself to “gets” (key/value lookups on single items) and “queries” (conditional lookup on items that have the same partition key, but different range/sort keys). Scanning, where we indiscriminately gobble all items from a table, is a slow, expensive antipattern. Useful gets and queries [require useful indexes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-indexes.html).
 
-## User Detail Data Dictionary
+## TreatmentLogView Detail Data Dictionary
 
 This table is used as a master list of users where we store mappings of all users to our [AWS Cognito User & Identity Pools]() with a UUID. Below is a list of the `attributes` we will store in the `UserDetail` service **DynamoDB** Table.:
 
@@ -45,48 +45,7 @@ This table is used as a master list of users where we store mappings of all user
 	1. `orgType`.`providerType`.
 
 * `CompanyName`: *String: Validate with CorporateParser Utility.*
-* `firstName`: *String*
-* `lastName`: *String*
-* `systemRole`: *String*
-* `authorizor`: *String*
-* `ein`: *Number: Validate against IRS.*
-* `ssn`: *Number: Validate against Dept. of State.*
 
-* `npi`
-* `medicaidProviderNum`
-
-* `insuredUniqueId`
-* `medicaidIdNum`
-* `recipientId`
-* `accountNum`: *Number: AHCA Cross Reference.*
-
-* `birthdate`
-* `treatmentAuthCode`
-
-* `email`: *String: Validate against ISO & Domain rules.*
-* `officePhone`:
-* `cellPhone`:
-* `Address Line1`
-* `Address Line2`
-* `Address Line1`
-* `City`
-* `State`
-* `Country`
-* `ZipCode`
-
-* `acquisitionSrc`: *String: TBD*
-* `memberSince`: *String: Date()*
-* `lastLogin`: *String: Date()*
-* `loginIPs`: *Number: list[]*
-	- [ ] *Store & record the UNIQUE IP address for every successful login attempt*>
-* `attemptedLoginIPs`: *Number: list[]*
-	- [ ] [ *ip.address1.date()*, *ip.address2.date()* ] *Store & record the IP address for every UNsuccessful login attempt: 90-day TTL*
-
-* `txnCount`
-
-* `txnUSDVol`
-
-* `claimUSDVol`
 
 
 
@@ -97,27 +56,6 @@ This table is used as a master list of users where we store mappings of all user
 	* Filter by: `ProvType`
 	* Sort by: `EIN`
 
-2. How many `users` by `ProviderType`?
-	* Filter by: `OrgType`
-	* Sort by: `EIN`
-
-3. How many `users` for each `EIN`?
-	* Filter by `OrgType`
-	* Sort by `SSN`
-
-4. Find `user` by `provType`.
-	* Filter by:
-		1. `DateJoined` < || > date()
-	* Sort by: `user` by `txnCount` DESC
-
-5. Find `user` by `provType`.
-	* Filter by:
-		1. `DateJoined` < || > date()
-	* Sort by: `user` by `txnVolume` DESC
-
-5. How many `users` by `acquisitionType`
-
-6. How many `users` by `city`
 
 #### User Detail Table
 

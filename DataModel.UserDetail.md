@@ -76,34 +76,46 @@ The `UserDetail` Table is the master list of users where we store mappings of al
 	* `status`: *String*
 
 3. **User Credentials & Licensure**
-
+	
+	Provider
 	* `npi`
 	* `medicaidProviderNum`
 
+	Patient
 	* `insuredUniqueId`
 	* `medicaidIdNum`
 	* `recipientId`
 	* `accountNum`: *Number: AHCA Cross Reference.*
 
+	Clinic
 	* `practiceWebAddress`
 	* `ein`: *Number: Validate against IRS.*
 	* `placeOfServiceCode`
 	* `taxonomyCode`
 
 4. **User Personal & Identifiable Information**
-
+	
+	Provider/Patient
 	* `ssn`: *Number: Validate against Dept. of State.*
 
+	Patient
 	* `treatmentAuthCode`
+
+	Patient/Provider
 	* `dateOfBirth`
 
+	Patient
 	* `birthSex`
 	* `genderIdentity`
 	* `sexualOrientation`
+
+	Patient/Provider
 	* `race`
 	* `languages`
 	* `maritalStatus`
 	* `employment`
+
+	Patient
 	* `hipaa` *bool: Patient/Guardian signed HIPPA NPP*
 	* `pcpRelease` *blockchain: Primary Care Physician Release PHI Auth*
 
